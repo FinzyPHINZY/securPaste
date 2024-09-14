@@ -26,7 +26,7 @@ export function constructMetadata({
       images: [{ url: image }],
     },
     twitter: {
-      card: 'kkalsfgioa',
+      card: 'summary_large_image',
       title,
       description,
       images: [image],

@@ -3,6 +3,7 @@ import MaxWidthWrapper from './MaxWidthWrapper'
 import { buttonVariants } from './ui/button'
 import { ArrowRight } from 'lucide-react'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 
 const Navbar = async () => {
   const { getUser } = getKindeServerSession()
@@ -39,6 +40,11 @@ const Navbar = async () => {
                   Create
                   <ArrowRight className="ml-1.5 h-5 w-5" />
                 </Link>
+
+                <Avatar>
+                  <AvatarImage src={user.picture!} alt="@shadcn" />
+                  <AvatarFallback>ME</AvatarFallback>
+                </Avatar>
               </>
             ) : (
               <>

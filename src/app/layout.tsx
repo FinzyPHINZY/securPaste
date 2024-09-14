@@ -29,8 +29,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <main className="flex flex-col grainy-light">
-          <div className="flex-1 flex">
+        <main className=" grainy-light">
+          <div className="">
             <Providers>{children}</Providers>
           </div>
         </main>
